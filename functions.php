@@ -1,10 +1,10 @@
 <?php
 /**
- * WP Bootstrap Starter functions and definitions
+ * E-Cell Starter functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package WP_Bootstrap_Starter
+ * @package E-Cell_Starter
  */
 
 if ( ! function_exists( 'wp_bootstrap_starter_setup' ) ) :
@@ -299,4 +299,15 @@ require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibili
  */
 if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
     require_once(get_template_directory() . '/inc/wp_bootstrap_navwalker.php');
+}
+
+/**
+ * Removing the Admin bar From site for non-admin users 
+ */
+add_action('after_setup_theme', 'remove_admin_bar');
+
+function remove_admin_bar() {
+  if (!current_user_can('administrator') && !is_admin()) {
+    show_admin_bar(false);
+  }
 }
