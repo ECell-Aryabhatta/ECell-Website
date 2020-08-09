@@ -16,6 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;400;500;600;700;800;900&family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
 
@@ -23,7 +25,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-starter' ); ?></a>
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
-	<header id="masthead" class="site-header navbar-static-top <?php echo wp_bootstrap_starter_bg_class(); ?>" role="banner">
+	<header id="masthead" class="site-header fixed-top <?php echo wp_bootstrap_starter_bg_class(); ?>" role="banner">
         <div class="container">
             <nav class="navbar navbar-expand-xl p-0">
                 <div class="navbar-brand">
@@ -37,7 +39,8 @@
 
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
+                    </span>
                 </button>
 
                 <?php
@@ -78,7 +81,8 @@
                     }
                     ?>
                 </p>
-                <a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>
+                <a href="#content" class="page-scroller">
+                <button type="button" id = "about-us" class="btn btn-light">About us</button></a>
             </div>
         </div>
     <?php endif; ?>
