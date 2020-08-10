@@ -8,33 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package WP_Bootstrap_Starter
+ * @package EcellAryabhatta
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses wp_bootstrap_starter_header_style()
+ * @uses EcellAryabhatta_header_style()
  */
-function wp_bootstrap_starter_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'wp_bootstrap_starter_custom_header_args', array(
+function EcellAryabhatta_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'EcellAryabhatta_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => 'fff',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'wp_bootstrap_starter_header_style',
+		'wp-head-callback'       => 'EcellAryabhatta_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'wp_bootstrap_starter_custom_header_setup' );
+add_action( 'after_setup_theme', 'EcellAryabhatta_custom_header_setup' );
 
-if ( ! function_exists( 'wp_bootstrap_starter_header_style' ) ) :
+if ( ! function_exists( 'EcellAryabhatta_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
- * @see wp_bootstrap_starter_custom_header_setup().
+ * @see EcellAryabhatta_custom_header_setup().
  */
-function wp_bootstrap_starter_header_style() {
+function EcellAryabhatta_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	/*

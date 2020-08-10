@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package WP_Bootstrap_Starter
+ * @package EcellAryabhatta
  */
 
 ?><!DOCTYPE html>
@@ -23,15 +23,15 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-starter' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'EcellAryabhatta' ); ?></a>
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
-	<header id="masthead" class="site-header fixed-top <?php echo wp_bootstrap_starter_bg_class(); ?>" role="banner">
+	<header id="masthead" class="site-header fixed-top <?php echo EcellAryabhatta_bg_class(); ?>" role="banner">
         <div class="container">
             <nav class="navbar navbar-expand-xl p-0">
                 <div class="navbar-brand">
-                    <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
+                    <?php if ( get_theme_mod( 'EcellAryabhatta_logo' ) ): ?>
                         <a href="<?php echo esc_url( home_url( '/' )); ?>">
-                            <img src="<?php echo esc_url(get_theme_mod( 'wp_bootstrap_starter_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+                            <img src="<?php echo esc_url(get_theme_mod( 'EcellAryabhatta_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
                         </a>
                     <?php else : ?>
                         <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
@@ -77,7 +77,7 @@
                     if(get_theme_mod( 'header_banner_tagline_setting' )){
                         echo get_theme_mod( 'header_banner_tagline_setting' );
                 }else{
-                        echo esc_html__('To customize the contents of this header banner and other elements of your site, go to Dashboard > Appearance > Customize','wp-bootstrap-starter');
+                        echo esc_html__('To customize the contents of this header banner and other elements of your site, go to Dashboard > Appearance > Customize','EcellAryabhatta');
                     }
                     ?>
                 </p>
