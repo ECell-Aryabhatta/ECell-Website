@@ -68,7 +68,7 @@
                     if(get_theme_mod( 'header_banner_title_setting' )){
                         echo get_theme_mod( 'header_banner_title_setting' );
                     }else{
-                        echo 'WordPress + Bootstrap';
+                        echo 'The Entrepreneurship Society';
                     }
                     ?>
                 </h1>
@@ -77,7 +77,7 @@
                     if(get_theme_mod( 'header_banner_tagline_setting' )){
                         echo get_theme_mod( 'header_banner_tagline_setting' );
                 }else{
-                        echo esc_html__('To customize the contents of this header banner and other elements of your site, go to Dashboard > Appearance > Customize','EcellAryabhatta');
+                        echo esc_html__('"They say entrepreneur is a business man, we say entrepreneur was once a comman man"');
                     }
                     ?>
                 </p>
